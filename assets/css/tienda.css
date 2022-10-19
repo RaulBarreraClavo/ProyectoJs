@@ -89,6 +89,108 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+/*--------------------------------------------------------------
+# Cabecera
+--------------------------------------------------------------*/
+/* .cabecera {
+  background: url("../img/about-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.cabecera:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cabecera .cabecera-img {
+  position: relative;
+  transition: 0.5s;
+}
+
+.cabecera .cabecera-img img {
+  max-width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.cabecera .cabecera-img::before {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  content: "";
+  border-left: 5px solid #cda45e;
+  border-top: 5px solid #cda45e;
+  transition: 0.5s;
+}
+
+.cabecera .cabecera-img::after {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  content: "";
+  border-right: 5px solid #cda45e;
+  border-bottom: 5px solid #cda45e;
+  transition: 0.5s;
+}
+
+.cabecera .cabecera-img:hover {
+  transform: scale(1.03);
+}
+
+.cabecera .cabecera-img:hover::before {
+  left: 10px;
+  top: 10px;
+}
+
+.cabecera .cabecera-img:hover::after {
+  right: 10px;
+  bottom: 10px;
+}
+
+.cabecera .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.cabecera .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cabecera .content ul li {
+  padding-bottom: 10px;
+}
+
+.cabecera .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #cda45e;
+}
+
+.cabecera .content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .cabecera {
+    background-attachment: fixed;
+  }
+} */
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -234,7 +336,7 @@ sup {
   top: -0.5em;
 }
 
-a {
+/* a {
   color: #0d6efd;
   text-decoration: underline;
 }
@@ -245,7 +347,7 @@ a:hover {
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 pre,
 code,
@@ -275,9 +377,9 @@ code {
   color: #d63384;
   word-wrap: break-word;
 }
-a > code {
+/* a > code {
   color: inherit;
-}
+} */
 
 kbd {
   padding: 0.2rem 0.4rem;
@@ -4466,11 +4568,11 @@ textarea.form-control-lg {
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
 }
-.navbar-light .navbar-text a,
-.navbar-light .navbar-text a:hover,
+/* .navbar-light .navbar-text a, */
+/* .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
-}
+} */
 
 .navbar-dark .navbar-brand {
   color: #fff;
@@ -4501,11 +4603,11 @@ textarea.form-control-lg {
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
 }
-.navbar-dark .navbar-text a,
+/* .navbar-dark .navbar-text a,
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
   color: #fff;
-}
+} */
 
 .card {
   position: relative;
