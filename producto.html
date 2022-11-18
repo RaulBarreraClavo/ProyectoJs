@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shoes Factory Shop</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/tienda.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/producto.css" rel="stylesheet">
+   
+
+</head>
+
+<body>
+    <div id="topbar" class="d-flex align-items-center ">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+                <i class="bi bi-clock d-flex align-items-center ms-4"><span> 24/7 Abierto</span></i>
+            </div>
+
+            <div class="languages d-none d-md-flex align-items-center">
+                <ul>
+                    <li>España</li>
+                    <!-- <li><a href="#">De</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation-->
+
+    <header style="margin-top: 1%;" id="header" class=" d-flex align-items-cente">
+        <div class="bordeBajoBlanco container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 style="margin-bottom:10px ;" class="logo me-auto me-lg-0"><a href="index.html"><span>Shoes Factory</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class=" navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="tienda.html">Tienda</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+
+
+                    <li  class="dropdown"><a href="#"><span>Mi Cuenta</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="misCompras.html">Mis Compras</a></li>
+                            
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+            <a href="login.html" style="margin-bottom:10px ;" id="btnIniciaSesion"  class="inicia-sesion-btn scrollto d-none d-lg-flex">Inicia Sesión</a>
+            <a href="registro.html" style="margin-bottom:10px ;"  id="btnRegistro"class="registrate-btn scrollto d-none d-lg-flex">Registrate</a>
+              <a  style="margin-bottom:10px ;"   id="btnCerrarSesion"class="registrate-btn scrollto d-none d-lg-flex">Cerrar Sesion</a>
+            <form class="d-flex">
+                <button id="btnCarrito" style="color: white;border-color: white;margin-bottom:10px ;" class="btn btn-outline-dark" type="button">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span id="cantidadCarrito"  class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+            </form>
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- Header-->
+    <div style="margin-left: 80%;margin-right: 5%;border: 1px solid white;display: none;" id="carrito"></div>
+
+
+    <!-- Section-->
+    <section id="seccion" style="margin-top:3% ;" class="py-5">
+        <div class="container px-4 px-lg-5 mt-5 ">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div  class="carousel-item active">
+                                <img id="cajaFoto1" style="width: 300px;height: 400px;"  class="d-block w-100">
+                            </div>
+                            <div  class="carousel-item">
+                                <img id="cajaFoto2" style="width: 300px;height: 400px;"  class="d-block w-100">
+                            </div>
+                            <div  class="carousel-item">
+                                <img id="cajaFoto3"style="width: 300px;height: 400px;" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div style="padding-left: 10% ;" class=" col-lg-4 colorTextos ">
+                    <div id="cajaNombre" style="font-size: 150%;"> </div>
+                    <div id="cajaPrecio" style="font-size: 100%;" class="mt-2"> </div>
+                    <div id="cajaDescripcion" style="font-size: 100%;color: white;" class="mt-2">  </div>
+                    <div style="font-size: 100%;color: white;" class="mt-2">
+                       <select class="caja">
+                        <option selected>Elige tu Talla</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                       </select>
+                    </div>
+                    <button id="btnComprar"  class="mt-2 caja" style="border-color: red;" type="button">Comprar</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Shoes Factory 2022</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/Producto.js"></script>
+    <script src="assets/js/productos.js"></script>
+    <!-- Core theme JS-->
+
+
+</body>
+
+</html>

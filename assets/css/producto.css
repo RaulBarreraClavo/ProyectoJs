@@ -1,0 +1,17 @@
+.colorTextos{
+    color: rgb(234, 255, 0);
+}
+.caja{
+    border-color: rgb(234, 255, 0);
+    background-color: black;
+    color: white;
+}
+
+.bordeBajoBlanco{
+border-bottom-color: white;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+}
+img.reducida {
+    width: 20px;
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>LogIn</title>
+    <title>Register</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="assets/css/login.css" rel="stylesheet">
@@ -19,15 +19,17 @@
     
     <div class="wrapper">
         <form class="login">
-            <p class="title">Acceso</p>
+            <p class="title">Registrate!</p>
             <input type="text" placeholder="usuario" onfocus="quitarError()" id="usuario" autofocus/>
             <i class="fa fa-user"></i>
             <input type="password" placeholder="clave" onfocus="quitarError()" id="clave" />
             <i class="fa fa-key"></i>
-            <a href="#">¿Olvidaste la clave?</a>
-            <button id="acceder" type="button" onclick="comprobarUsuario()">
+            <input type="passwordConfirmada" placeholder="confirmar clave" onfocus="quitarError()" id="claveConfirmada" />
+            <i class="fa fa-key"></i>
+            
+            <button id="acceder" type="button" onclick="comprobarRegistro()">
      
-      <span class="state">Acceder</span>
+      <span class="state">Registro</span>
     </button>
             <div id="error" style="display:none;color:red">
                 Usuario/clave erroneo

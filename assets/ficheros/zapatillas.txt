@@ -1,0 +1,5 @@
+[
+{"id":"1","nombre":"Air Force1","descripcion":"Zapatillas Nike","precio":"80","foto":"zapatillas/AirForce1/foto1.png","foto2":"zapatillas/AirForce1/foto2.png","foto3":"zapatillas/AirForce1/foto3.png"},
+{"id":"2","nombre":"Air Jordan","descripcion":"Zapatillas Nike","precio":"90","foto":"zapatillas/AirJordan1/foto1.PNG","foto2":"zapatillas/AirJordan1/foto2.PNG","foto3":"zapatillas/AirJordan1/foto3.PNG"},
+{"id":"3","nombre":"Superstars","descripcion":"Zapatillas Adidas","precio":"50","foto":"zapatillas/Superstars/foto1.PNG","foto2":"zapatillas/Superstars/foto2.PNG","foto3":"zapatillas/Superstars/foto3.PNG"}
+]
