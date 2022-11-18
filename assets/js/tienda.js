@@ -184,7 +184,13 @@ function crearProducto(){
     let ruta=`zapatillas/${nombre}/"`
 
     if(sessionStorage.getItem("productos")){
-        id_Nuevo=listaProductos[listaProductos.length-1].id
+        listaProductos=JSON.parse(sessionStorage.getItem("productos"))
+        if(listaProductos.length!=0){
+            id_Nuevo=listaProductos[listaProductos.length-1].id
+        }
+      
+    }else{
+        id_Nuevo=0
     }
     precio=parseInt(precio,10)
 
@@ -376,6 +382,8 @@ function modificar(){
 function eliminarZapatilla(id){
    let zapatilla= listaProductos.findIndex(elemento=>elemento.id==id)
    listaProductos.splice(zapatilla,1)
+   sessionStorage.setItem("productos",JSON.stringify(listaProductos))
+   filtrar()
 }
 function visualizarProducto(id){
     sessionStorage.setItem("producto",JSON.stringify(id));
